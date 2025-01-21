@@ -1,5 +1,5 @@
 :root {
-    --blue-color: rgb(131, 220, 255);
+  --blue-color: rgb(131, 220, 255);
 }
 
 * {
@@ -19,7 +19,8 @@ body {
   grid-template-columns: 1fr 1fr;
   background-color: var(--blue-color);
   padding: 30px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.233);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.137);
+  z-index: 1;
 }
 
 .page-info {
@@ -67,8 +68,22 @@ form button {
   font-weight: bold;
 }
 
-.display{
-    background-color:rgb(255, 255, 255);
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+.display {
+  background-color: rgb(224, 224, 224);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+.card {
+  background-color: #fff;
+  width: clamp(150px, 25%, 400px);
+  height: 150px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.233);
+  display: flex;
+  border-radius: 12px;
+}
+.highlight {
+  width: 8px;
+  /* background-color: red; */
+  border-radius: 12px 0 0 12px;
 }
