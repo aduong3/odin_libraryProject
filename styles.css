@@ -71,7 +71,7 @@ body {
 .display {
   background-color: rgb(224, 224, 224);
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 30%));
   padding: 40px;
   gap: 24px;
 }
@@ -80,7 +80,7 @@ body {
   height: 200px;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.233);
   display: grid;
-  grid-template-columns: 0.1fr 2fr 0.3fr;
+  grid-template-columns: 0.1fr 2fr 0.5fr;
   border-radius: 12px;
   gap: 14px;
 }
@@ -107,20 +107,25 @@ body {
 }
 
 .card svg{
-  width: 80%;
-
-
+  width: 50%;
+  height: auto;
+}
+.button-list{
+  display: flex;
+  flex-direction: column;
+  justify-self: space-evenly;
+  align-self: center;
+  gap: 12px;
 }
 
-.trashcan{
+.card button{
   height: 30%;
   background-color: transparent;
   border: none;
-  align-self: center;
   border-radius: 4px;
-  margin-right: 12px;
+  padding: 6px;
 }
-.trashcan:hover{
+.card button:hover{
   background-color:rgba(0, 0, 0, 0.123);
 }
 
