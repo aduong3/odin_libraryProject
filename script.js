@@ -20,8 +20,12 @@ function addBookToLibrary(e) {
   const author = document.querySelector("#author");
   const pages = document.querySelector("#pages");
   const hasRead = document.querySelector("#hasRead");
-  console.log(title.length);
-
+  console.log(title.value.length);
+  if (
+    title.value.length != 0 &&
+    author.value.length != 0 &&
+    pages.value.length != 0
+  ) {
     myLibrary.push(
       new Book(
         title.value,
@@ -35,8 +39,7 @@ function addBookToLibrary(e) {
     author.value = "";
     pages.value = "";
     hasRead.checked = false;
-  
-
+  }
   LoopThroughBooks();
 }
 
